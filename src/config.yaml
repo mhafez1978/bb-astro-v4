@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Blooming Brands
+  site: 'https://blooming-brands.com'
   base: '/'
   trailingSlash: false
 
@@ -9,9 +9,9 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Blooming Brands
+    template: '%s — BloomingBrands'
+  description: "\U0001F680 Blooming Brands a full service web design &amp; marketing agency."
   robots:
     index: true
     follow: true

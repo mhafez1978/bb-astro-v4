@@ -61,8 +61,8 @@ const {
           classes={{
             container: `gap-y-4 md:gap-y-8`,
             panel: 'max-w-none',
-            title: 'text-lg font-medium leading-6 dark:text-white ml-2 rtl:ml-0 rtl:mr-2',
-            description: 'text-muted dark:text-slate-400 ml-2 rtl:ml-0 rtl:mr-2',
+            title: 'text-md font-medium leading-6 dark:text-white ml-2 rtl:ml-0 rtl:mr-2',
+            description: 'text-smtext-muted dark:text-slate-400 ml-2 rtl:ml-0 rtl:mr-2',
             icon: 'flex h-7 w-7 items-center justify-center rounded-full bg-green-600 dark:bg-green-700 text-gray-50 p-1',
             action: 'text-lg font-medium leading-6 dark:text-white ml-2 rtl:ml-0 rtl:mr-2',
           }}
@@ -71,20 +71,49 @@ const {
       <div aria-hidden="true" class="mt-10 md:mt-0 md:basis-1/2">
         {
           image && (
-            <div class="relative m-auto max-w-4xl">
-              {typeof image === 'string' ? (
-                <Fragment set:html={image} />
-              ) : (
-                <Image
-                  class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
-                  width={500}
-                  height={500}
-                  widths={[400, 768]}
-                  sizes="(max-width: 768px) 100vw, 432px"
-                  layout="responsive"
-                  {...image}
-                />
-              )}
+            <div class="flex flex-col justify-center items-start">
+              <div class="relative w-full">
+                {typeof image === 'string' ? (
+                  <div class="min-h-1/2 flex flex-col justify-center items-start">
+                    {/* <div class="w-full text-right">
+                      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+                        Cutting Edge Tech Stack for Your Success
+                      </h3>
+                      <p class="mb-6">Gain a competitive advantage by incorporating industry leading practices</p>
+                    </div> */}
+                    <Fragment set:html={image} />
+                  </div>
+                ) : (
+                  <div class="min-h-1/2  flex flex-col justify-center items-center">
+                    <div class="w-full text-right">
+                      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+                        Cutting Edge Tech Stack for Your Success
+                      </h3>
+                      <p class="mb-12">Gain a competitive advantage by incorporating industry leading practices</p>
+                      <Image
+                        class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
+                        width={500}
+                        height={500}
+                        widths={[400, 768]}
+                        sizes="(max-width: 768px) 100vw, 432px"
+                        layout="responsive"
+                        {...image}
+                      />
+                      <div class="mt-8 text-black dark:text-white">
+                        {/* <Image
+                          class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
+                          width={500}
+                          height={500}
+                          widths={[400, 768]}
+                          sizes="(max-width: 768px) 100vw, 432px"
+                          layout="responsive"
+                          {...image}
+                        /> */}
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
           )
         }

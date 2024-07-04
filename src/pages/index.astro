@@ -13,7 +13,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Blooming Brands — Web Development & Online Marketing Agency',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,28 +25,27 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Book Online',
+        href: 'https://calendly.com/blooming-brands/30min',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:calendar-smile',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Learn More', href: '#features', icon: 'tabler:circle-chevron-down' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{
+      src: '~/assets/images/hero-image.png',
+      alt: 'Blooming Brands Full Stack Web Development & Online Marketing Agency',
+    }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
+      Let&apos;s Help Your Business <span class="text-accent text-purple-500 dark:text-white highlight"> Bloom</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
+        We transform your business with our blazing fast websites and online marketing services. Learn how we can help
+        you expand your brand reach locally and globally !</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
     </Fragment>
   </Hero>
 
@@ -58,45 +57,45 @@ const metadata = {
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    tagline="Why us ?"
+    title="What you get with Blooming Brands"
+    subtitle="Discover how our tailored solutions can drive growth, enhance visibility, and boost your bottom line."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Client-Centric Approach',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'We prioritize understanding our clients unique needs, goals, and challenges to deliver tailored solutions that drive their success.',
+        icon: 'tabler:trophy',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Transparency and Communication',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'We maintain open and honest communication throughout the project, providing regular updates and seeking client feedback to ensure alignment and satisfaction.',
+        icon: 'tabler:mood-happy',
       },
       {
-        title: 'Best Practices',
+        title: 'Quality and Excellence',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+          'We are committed to delivering high-quality services and products that exceed client expectations, utilizing the latest technologies and best practices.',
+        icon: 'tabler:award',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Collaboration and Partnership',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
+          'We view our clients as partners, working collaboratively to achieve shared goals and fostering a strong, long-lasting relationship based on mutual trust and respect.',
+        icon: 'tabler:building-bridge',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Continuous Improvement',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          'We embrace a culture of continuous improvement, constantly seeking ways to enhance our services, processes, and client outcomes through innovation and learning.',
+        icon: 'tabler:git-compare',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Results-Driven Focus',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'We are dedicated to delivering measurable results that contribute to our clients growth and success, using data-driven strategies and performance metrics to guide our efforts.',
+        icon: 'tabler:chart-bar-popular',
       },
     ]}
   />
@@ -105,34 +104,45 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Our services"
+    title="We offer a wide range of services to help your business grow."
     items={[
       {
-        title: 'Built on top of Astro 4.0',
-        description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+        title: 'Blazing Fast Custom Websites',
+        description: 'Creating visually appealing, user-friendly websites tailored to the unique needs of each client.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Responsive Design',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'Ensuring that websites are optimized for viewing on various devices, such as desktops, tablets, and smartphones.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Search Engine Optimization (SEO)',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Implementing strategies to improve a website&apos;s visibility in search engine results pages, thereby increasing organic traffic.',
+      },
+      {
+        title: 'Pay-Per-Click (PPC) Advertising',
+        description:
+          'Creating targeted ad campaigns on platforms like Google Ads or social media sites to attract potential customers through paid advertising.',
+      },
+      {
+        title: 'Email Marketing Campaigns',
+        description:
+          'Crafting effective email campaigns for clients that help them connect with their audience and drive conversions.',
+      },
+      {
+        title: 'Content Copywriting',
+        description:
+          'Developing compelling written content, visuals, videos, or infographics to engage audiences and drive online engagement.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      src: '../../src/assets/images/programming-background-with-html.jpg',
+      alt: 'fff',
     }}
   >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
-    </Fragment>
+    <Fragment slot="content"> </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -141,7 +151,7 @@ const metadata = {
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!-- <Content
     isAfterContent
     items={[
       {
@@ -174,11 +184,11 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content> -->
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!-- <Content
     isReversed
     isAfterContent
     items={[
@@ -212,11 +222,11 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content> -->
 
   <!-- Steps Widget ****************** -->
 
-  <Steps
+  <!-- <Steps
     title="Get your dream website up and running in no time with AstroWind."
     items={[
       {
@@ -246,11 +256,11 @@ const metadata = {
       src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
       alt: 'Steps image',
     }}
-  />
+  /> -->
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <!-- <Features2
     title="Most used widgets"
     subtitle="Provides frequently used components for building websites using Tailwind CSS"
     tagline="Components"
@@ -310,15 +320,14 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Features2>
+  </Features2> -->
 
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
+    title="Read more content on our Latest News page"
+    information={`Blooming Brands latest news, projects, and documentation.
+                        Each new article will be an important step that you will need to know to understand our services and solutions offering better.
                 `}
   />
 
