@@ -111,11 +111,11 @@ export const headerData = {
       href: '#',
     },
     {
-      text: 'Portfolio',
-      href: '#',
+      text: 'Services',
+      href: '#services',
     },
     {
-      text: 'Services',
+      text: 'Portfolio',
       href: '#',
     },
     {
@@ -154,26 +154,26 @@ export const footerData = {
     //     { text: 'AstroWind Desktop', href: '#' },
     //   ],
     // },
-    // {
-    //   title: 'Support',
-    //   links: [
-    //     { text: 'Docs', href: '#' },
-    //     { text: 'Community Forum', href: '#' },
-    //     { text: 'Professional Services', href: '#' },
-    //     { text: 'Skills', href: '#' },
-    //     { text: 'Status', href: '#' },
-    //   ],
-    // },
+    {
+      title: 'Support',
+      links: [
+        { text: 'Docs', href: '#' },
+        // { text: 'Community Forum', href: '#' },
+        // { text: 'Professional Services', href: '#' },
+        // { text: 'Skills', href: '#' },
+        // { text: 'Status', href: '#' },
+      ],
+    },
     {
       title: 'Company',
       links: [
         { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
+        { text: 'Latest News', href: '#' },
         { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        // { text: 'Press', href: '#' },
+        // { text: 'Inclusion', href: '#' },
+        // { text: 'Social Impact', href: '#' },
+        // { text: 'Shop', href: '#' },
       ],
     },
   ],

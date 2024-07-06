@@ -11,6 +11,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Portfolio from '~/components/widgets/Portfolio.tsx';
 
 const metadata = {
   title: 'Blooming Brands — Web Development & Online Marketing Agency',
@@ -103,6 +104,7 @@ const metadata = {
   <!-- Content Widget **************** -->
 
   <Content
+    id="services"
     isReversed
     tagline="Our services"
     title="We offer a wide range of services to help your business grow."
@@ -148,6 +150,8 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
+
+  <Portfolio />
 
   <!-- Content Widget **************** -->
 
